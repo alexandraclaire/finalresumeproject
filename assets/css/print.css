@@ -1,0 +1,114 @@
+
+
+/**
+ * Remove unnecessary global styling from printed media.
+ *
+ * 1. Black prints faster.
+ */
+
+* {
+    color: black !important; /* 1 */
+    text-shadow: none !important;
+    background: transparent !important;
+    border:none !important;
+}
+/**
+ * Use a print-friendly font and size.
+ */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 8pt;
+    margin: 0.5cm;
+    padding: 2em 5em;
+}
+.container {
+     -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none; 
+}
+/**
+ * Visually separate header from body.
+ */
+
+header ul li {
+    float:right;
+    font-size:10pt;
+    list-style:none;
+    display:inline;
+    margin-left:16px;
+    margin-top:10px;
+}
+/**
+ * Visually separate footer from body.
+ */
+
+footer {
+    margin-top: 12pt;
+    border-top: solid 1pt black;
+}
+/**
+ * Make sure links are not underlined.
+ */
+a {
+    text-decoration: none;
+}
+img {
+    display:none !important;
+}
+/**
+ *  Harmonise size, style and vertical margin of headings.
+ */
+h1 {
+    font-size: 50pt;
+    line-height: 40pt;
+    font-weight: normal;
+    margin: 16pt 0;
+    font-family:"Lobster", Sans-serif;
+}
+h2 {
+    font-size: 20pt;
+    line-height: 28pt;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    margin-left:-0.5em;
+}
+h3 {
+    font-size: 10pt;
+    line-height: 20pt;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    margin: 12pt 0;
+}
+.references {
+    margin-top:-2em;
+}
+p {
+    orphans:1;
+    widows: 2;
+}
+.item1 {
+    margin-bottom:3em;
+}
+#skills {
+    display: inline-block;
+}
+.skillset li{
+    list-style-type:disc;
+    padding-right:2em;
+    margin:2em 2em 2em 0;
+    float:left;
+}
+#skills span {
+    position:relative;
+    bottom:0;
+    text-align:left;
+}
+
+
+
+
+
+
+
